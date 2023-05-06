@@ -1,7 +1,13 @@
 const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
+let ctx = canvas.getContext("2d");
 const particleArray = [];
 
+window.addEventListener("resize",function()
+{
+    canvas.width=window.innerWidth
+    canvas.height=window.innerHeight
+    ctx=canvas.getContext("2d")
+})
 
 
 console.log(particleArray)
