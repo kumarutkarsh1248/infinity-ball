@@ -37,7 +37,7 @@ class Particle{
         this.y = mouse.y;
         // this.x = canvas.width/2;
         // this.y = canvas.height/2;
-        this.size = Math.random()*10 +5;
+        this.size = Math.random()*40 +5;
         this.speedx = Math.random()*80 - 40;
         this.speedy = Math.random()*80 - 40;
         this.color_list = ["red", "orange", "white", "blue", "yellow"];
@@ -46,7 +46,7 @@ class Particle{
     update(){
         this.x += this.speedx;
         this.y += this.speedy;
-        this.size = this.size*0.995;
+        this.size = this.size*0.998;
         // if (this.size < 1){
         //     particleArray.(particleArray[i])  
         // }
